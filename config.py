@@ -1,8 +1,13 @@
-# ==========================
+
 # Gemini Configuration
 # ==========================
 
-API_KEY = "AQ.Ab8RN6IG0z7537__cja-8ifyRX2WdPtN7HJ5Bwo60-kNITml5A"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+API_KEY = os.getenv("GOOGLE_API_KEY")
 
 MODEL_NAME = "gemini-2.5-flash"
 
