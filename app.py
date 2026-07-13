@@ -16,7 +16,9 @@ import io
 import json
 from config import *
 
-
+# Tạo thư mục nếu chưa tồn tại
+os.makedirs("uploads", exist_ok=True)
+os.makedirs("output", exist_ok=True)
 
 client = genai.Client(
     api_key=API_KEY
